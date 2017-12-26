@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kevin.firebasetest4.DetailActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="367dp"
+        android:layout_height="38dp"
+        android:text="付費廣告區"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/list"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/list"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="#fff"
+        android:onClick="clickHouse"
+        android:text="房屋"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="#fff"
+        android:onClick="clicktenant"
+        android:text="房客"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toRightOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:textSize="24dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="#fff"
+        android:text="租金"
+        android:onClick="clickRent"
+        app:layout_constraintLeft_toRightOf="@+id/button8"
+        app:layout_constraintTop_toTopOf="parent"
+     />
+
+    <Button
+        android:id="@+id/button10"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:text="管理"
+        android:onClick="clickManagement"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/button12"
+        android:layout_marginLeft="-4dp" />
+
+    <Button
+        android:id="@+id/button11"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:textSize="24dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="#fff"
+        android:text="水費"
+        android:onClick="clickWater"
+        app:layout_constraintLeft_toRightOf="@+id/button9"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintTop_toTopOf="@+id/button9"
+        android:layout_marginTop="-8dp" />
+
+    <Button
+        android:id="@+id/button12"
+        style="@android:style/Widget.Button.Inset"
+        android:textSize="24dp"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="#fff"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:onClick="clickElectricity"
+        android:text="電費"
+
+        app:layout_constraintLeft_toRightOf="@+id/button11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="367dp"
+        android:layout_height="371dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button19"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="  新增房客"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:onClick="addTennet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button20"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="  新增各項費用"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:onClick="addPrice"
+        app:layout_constraintLeft_toRightOf="@+id/button21"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button21"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="  刪除房客"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:onClick="delTennet"
+        app:layout_constraintLeft_toRightOf="@+id/button19"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kevin.firebasetest4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".UserList" />
+        <activity android:name=".LandlordListView">
+
+
+        </activity>
+        <activity android:name=".LandlordAdd1" />
+        <activity android:name=".LandlordAdd" />
+        <activity android:name=".LandlordExpandable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".TenantActivity"></activity>
+        <activity android:name=".DateActivity" />
+        <activity android:name=".AddRentActivity"></activity>
+        <activity android:name=".LanlordActivity">
+
+        </activity>
+        <activity android:name=".AddHouseActivity" />
+        <activity android:name=".AddHouseDataActivity" />
+        <activity android:name=".AddTenantActivity"></activity>
+        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".AddLanlordData"></activity>
+    </application>
+
+</manifest>
